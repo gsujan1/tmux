@@ -1,0 +1,13 @@
+# remap prefix to ctrl-a
+set -g prefix C-a
+bind C-a send-prefix
+unbind C-b
+
+# increase history limit
+set -g history-limit 8000
+
+# disable automatic renaming of windows
+set -g allow-rename off
+
+# searc mode Vi (default is emacs ew)
+set-window-option -g mode-keys vi
