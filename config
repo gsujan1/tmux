@@ -11,3 +11,33 @@ set -g allow-rename off
 
 # search mode Vi (default is emacs ew)
 set-window-option -g mode-keys vi
+
+# start windows numbering at 1
+set -g base-index 1
+
+# remove time delay after pressing prefix key so we can move around quicker
+set-option -g repeat-time 200
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+
+# don't know if need this one, but keeping in here till I verify everything works
+# set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# dracula tmux theme and modifications:
+set -g @plugin 'dracula/tmux'  
+set -g @dracula-show-battery false # disable battery functionality
+set -g @dracula-show-network false # disable network functionality
+set -g @dracula-show-weather false # no weather
+set -g @dracula-show-location false # dont show location info
+set -g @dracula-military-time true # no AM/PM nonsense
+set -g @dracula-show-timezone false # disable timezone
+# set -g @dracula-border-contrast true # high contrast border???
+set -g @dracula-show-left-icon session # can be smiley (default), session, or window
+set -g @dracula-cpu-usage true
+set -g @dracula-ram-usage true
+# set -g @dracula-gpu-usage true # not needed for a VM
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+# Don't forget to do [prefix + I] to initialize plugins
+run '~/.tmux/plugins/tpm/tpm'
