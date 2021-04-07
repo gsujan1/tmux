@@ -18,8 +18,6 @@ Make sure you have tpm (tmux plugin manager) installed:
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-and then install [dracula theme]
-
 In home directory:
 ```bash
 mv themed-tmux.conf .tmux.conf
