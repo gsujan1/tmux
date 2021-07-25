@@ -27,3 +27,5 @@ run:
 2. prefix + I -> to install the plugins
 
 These are **case sensitive**
+
+# vim [dracula theme](https://draculatheme.com/vim)
